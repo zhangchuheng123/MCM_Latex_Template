@@ -1,0 +1,15 @@
+%======================问题介绍==================
+\section{Introduction}
+
+\par Ebola virus disease (EVD), which is also called Ebola hemorrhagic fever or simply Ebola, is an infectious disease caused by one of the Ebola virus strains, alongside high lethality and rapid epidemicity. EVD was first discovered in 1976 near the Ebola river. Since then, outbreaks have appeared sporadically in Africa. In 2014, the largest outbreak of the disease occurred in West Africa and caused thousands of cases of death.\cite{CDC} Due to the severity of its outbreak, a feasible method is required to outline its progression and to predict trends, thus being able to form a strategy fighting against infectious diseases like EVD.
+\subsection{The problems we concern}
+As is known to all, the spread of EVD is influenced by various factors. Knowing these factors and the role they played can give us a depper understanding of EVD. Therefore, we are eager to figure out factors influencing the spread.
+
+Another problem lies in the delivery system of drug and vaccine. Since \emph{the World Medical Association} has announced a new medication (as is stated in the problem), the quantity and location of medication delivery became a problem of great concern. Considering that pharmaceutical industries may not capable of manufacturing enough drug and vaccine, we need to optimize the delivery plan to suppress the spread of EVD.
+
+\subsection{The models we are to construct}
+In this paper, our purpose is to construct mathematical models that can effectively solve these problems. To meet the goal, we attempt to divide the model into two main parts.
+
+Firstly, we want to construct an initial model discussing the spread of disease in a single city. Some main factors that influence the spread of disease are considered in this model, but the influence and interaction with other cities are not included. This model can describe, at least roughly, the development of EVD in the city after some citizens are infected and measure the importance of different factors, but the spread among cities still cannot be seen. Accordingly, the optimized delivery plan cannot be made with the aim of this single model.
+
+Secondly, we are going to construct a multiple-city model based on the first model. In this model, cities are connected by specific relation, thus allowing pathogen spreads from one city to another. This model can be used to describe the spread of disease in a rather vast geographic regions. With the aim of this model, we use genetic algorithm (GA) to optimize delivery plan.

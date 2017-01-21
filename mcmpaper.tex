@@ -1,0 +1,38 @@
+\documentclass[a4paper, 11pt]{article}
+% ----- Loading the Package MCMthesis -----
+% -----           v 5.01-L            -----
+% `tcn' is short for `Team Control Number'.
+% You should fill your tcn after the equal sign following tcn.
+% The option `sheet' contorls weather the summary sheet
+% will appear.
+% The option `abstract' controls weather the abstract 
+% will appear in the title-page.
+\usepackage[tcn = 39465, sheet = true, abstract = false]{MCMthesis}
+\problem{A}
+\usepackage{palatino}
+\setlength\parskip{.5\baselineskip}
+\providecommand{\abstractname}{\relax}
+\renewcommand{\abstractname}{Abstract} 
+
+\title{MCM essay}
+\author{}
+\date{\today}
+
+\begin{document}
+\input{abstract.tex}
+\maketitle
+\tableofcontents
+\newpage
+\pagestyle{fancy}
+
+\input{Introduction.tex}
+\input{Background.tex}
+\input{PreviousWork.tex}
+\input{Model.tex}
+\input{Discussion.tex}
+\input{Conclusion.tex}
+\input{Letter.tex}
+\input{reference.tex}
+\input{appendix.tex}
+
+\end{document}
